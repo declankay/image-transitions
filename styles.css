@@ -46,3 +46,23 @@ img {
 .image-container .fade:hover {
     opacity: 1;
 }
+
+.image-container.zoom {
+    overflow: hidden;
+}
+
+.image-container.zoom img {
+    transition: transform 0.5s ease;
+}
+
+.image-container.zoom:hover img {
+    transform: scale(1.2);
+}
+
+.image-container.grayscale img {
+    transition: filter 0.5s ease;
+}
+
+.image-container.grayscale:hover img {
+    filter: grayscale(100%);
+}
